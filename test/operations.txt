@@ -1,0 +1,137 @@
+# ##############################################################################
+# ####   Operations that can be applied to a digital image, and its arguments...
+# ##############################################################################
+#
+# <file_line> =
+#
+#     black_frame <width>
+#
+#     white_frame <width>
+#
+#     black_components <adjacence>
+#
+#     white_components <adjacence>                   <--- NOT WORKING
+#
+#     edges <border_adjacence>
+#
+#     medial_axis_transformation <distance_adjacence>
+#
+#     ma <distance_adjacence>
+#
+#     rebuild_from_ma                   <--- NOT WORKING
+#
+#     simple_points_find <adjacence>
+#
+#     simple_points_remove <simple_points_algorithm> <adjacence>
+#
+#     sequentiall_shrink <sequential_algorithm> <adjacence>
+#
+#     parallel_shrink <parallel_algorithm>
+#
+#
+#
+#
+# <width> =
+#
+#     integer > 0
+#
+#
+#
+#
+# <adjacence> = <border_adjacence> = <distance_adjacence> =
+#
+#     8_4
+#
+#     4_8
+#
+#
+#
+#
+# <simple_points_algorithm> =
+#
+#     sweep
+#
+#     borders
+#
+#     borders_no_ma
+#
+#     north_frontier
+#
+#     east_frontier
+#
+#     south_frontier
+#
+#     west_frontier
+#
+#     rh_north
+#
+#     rh_east
+#
+#     rh_south
+#
+#     rh_west
+#
+#     ros_north
+#
+#     ros_east
+#
+#     ros_south
+#
+#     ros_west	
+#
+#     gh89a1_odd
+#
+#     gh89a1_even
+#
+#     tsin_odd
+#
+#     tsin_even
+#
+#     gh89a2_odd
+#
+#     gh89a2_even
+#
+#
+#
+#
+# <sequential_algorithm> =
+#
+#     sweep
+#
+#     borders
+#
+#     borders_no_ma
+#
+#
+#
+#
+# <parallel_algorithm> =
+#
+#     frontiers
+#
+#     rh
+#
+#     ros
+#
+#     gh89a1
+#
+#     tsin
+#
+#     gh89a2
+#
+#
+#
+#
+# ##############################################################################
+
+white_frame 1
+
+black_components 8_4
+
+edges 8_4
+
+medial_axis_transformation 8_4
+
+ma 8_4
+
+parallel_shrink gh89a2
